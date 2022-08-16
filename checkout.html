@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>E-Commerce</title>
+
+    <link rel="stylesheet" href="assets/css/checkout.css" />
+</head>
+
+<body>
+    <section id="commercenav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><h3 class="navbar_i_brand name">Shopping center</h3></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto links_navbar">
+                <li class="nav-item active" >
+                  <a class="nav-link links_navbar_a" style="padding-right: 15px;" href="home.html">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link links_navbar_a" style="padding-right: 15px;" href="product.html">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link links_navbar_a" style="padding-right: 15px;" href="category.html">Category</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link links_navbar_a" style="padding-right: 15px;" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link links_navbar_a" style="padding-right: 15px;" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-success my-2 my-sm-0" href="search.html">Search</a>
+                </li>
+              </ul>
+              <div class="cart">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart fa-2x cartfont"></i>
+  
+                </a>
+                </div>
+            
+            </div>
+          </nav>
+    </section>
+    <br /><br /><br />
+    <section class="checkout">
+        <div class="checoutheading">
+            <h1>Checkout</h1>
+          </div>
+        <div class="row">
+            <div class="col-lg-6 spaceconatiner">
+                <div class="container checkcontainer">
+                    <form action="order_confirm.html">
+                        <div class="row">
+                            <div class="col" style="margin-bottom: 30px;">
+                                <label for="fname">First Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col style=" margin-bottom: 20px;"">
+                                <label for="lname">Last Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Email <Address></Address></label>
+                            <input type="text" class="form-control" id="formGroupExampleInput">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Phone</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Country</label>
+                            <select class="custom-select form-group">
+                                <option value="" selected>Choose your option</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Address Line 1</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2"
+                                placeholder="House number and street number">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Address Line 2</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2"
+                                placeholder="House number and street number(optional)">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Postcode/Zip</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Town/City</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Additional Information</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="pur_button">
+                            <button class="btn btn-primary"><i class="fa fa-check"></i>
+                                Purchase</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4 space_check">
+                <div class="container">
+                    <h5 class="orderconfirmhead">Order Summary</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between
+                            align-items-center border-0 px-0 pb-2">
+                                <span>Product name 1</span>
+                                <span>x2</span>
+                                <span>₹500</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between
+                            align-items-center border-0 px-0 pb-2">
+                                <span>Product name 2</span>
+                                <span>x2</span>
+                                <span>₹600</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between
+                            align-items-center border-top px-0 mb-3">
+                                <div>
+                                    <strong>Total amount</strong>
+                                    <strong>
+                                        <p class="mb-0">(including VAT)</p>
+                                    </strong>
+                                </div>
+                                <span><strong>₹1100</strong></span>
+                            </li>
+                        </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Quick links</h3>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="Category">Category</a></li>
+                            <li><a href="product.html">Products</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text comp">
+                        <h1>Company Name</h1>
+                        <h3>Shopping Center</h3>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <button onclick="scroll_to_top()" id="btn_scroll"><i class="fas fa-arrow-up"></i></button>
+    <script>
+        var mybutton = document.getElementById("btn_scroll");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        function scroll_to_top() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>E-Commerce</title>
+
+    <link rel="stylesheet" href="/css/form.css" />
+</head>
+
+<body>
+    <section id="commercenav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto links_navbar">
+                <li class="nav-item active" >
+                  <a class="nav-link links_navbar_a" style="padding-right: 15px;" href="/admin">Order </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link links_navbar_a" style="padding-right: 15px;" href="/add">Add product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link links_navbar_a" style="padding-right: 15px;" href="/delete">Delete product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link links_navbar_a" style="padding-right: 15px;" href="/update">Update</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link links_navbar_a" style="padding-right: 15px;" href="/customer">Customers</a>
+                </li>
+               
+              </ul>
+             
+            
+            </div>
+          </nav>
+    </section>
+    <br /><br /><br />
+
+    <section class="all">
+
+        <div class="container allus">
+            <form action="/addproduct" method="POST">
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Product Code </label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" name="productcode">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Product name</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" name="productname">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Description</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" name="description">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Category:  </label>
+                    <select name="category" id="category">
+                        <option value="protien">Protien</option>
+                        <option value="Gym Equipment">Gym Equipment </option>
+                        <option value="Clothing">Clothing</option>
+                        <option value="Electronics">Electronics</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Image Url</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" name="imgurl">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Price</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" name="price">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Quantity</label>
+                    <input type="number" class="form-control" id="formGroupExampleInput" name="quantity">
+                </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        </div>
+
+
+
+    </section>
+
+    
+</body>
+
+</html>

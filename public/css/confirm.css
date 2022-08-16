@@ -1,0 +1,143 @@
+body{
+  background-color: #53B8BB;
+  overflow-x: hidden;
+}
+
+#commercenav{
+  background-color: #53B8BB;
+  padding: 1.5%;
+}
+
+.links_navbar{
+  margin-left: 35%;
+  margin-right: 0px;
+  font-size: 20px;
+  border: 5px solid #fff;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.links_navbar_a{
+  padding: 10px;
+
+}
+
+.name{
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.orderconfirmationheading{
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  margin-bottom: 60px;
+  background-color: #fff;
+  padding: 30px;
+  border: 5px solid black;
+  border-radius: 30px;
+}
+
+.ordercheckicon{
+    margin-left: 45%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color:green;
+}
+
+.order_contain{
+    margin-bottom: 100px;
+}
+
+.thankyou_order{
+    text-align: center;
+}
+
+.Status{
+    color: darkblue;
+}
+
+.btnhomereturn{
+    margin-left: 45%;
+    margin-top: 20px;
+}
+
+
+
+.footer-dark {
+  padding:50px 0;
+  color:#f0f9ff;
+  background-color:#282d32;
+  width: 130%;
+}
+
+.footer-dark h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-dark ul a {
+  color:inherit;
+  text-decoration:none;
+}
+
+
+
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+
+
+.footer-dark .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+}
+
+.footer-dark .item.social {
+  text-align:center;
+}
+
+
+.footer-dark .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:0 8px;
+  color:#fff;
+}
+
+#btn_scroll {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99;
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border: 5px solid black;
+  border-radius: 4px;
+}
+
+#btn_scroll:hover {
+  background-color: darkblue;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zxx"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/signin.css" type="text/css" media="all">
+    <link href="./css/font-awesome.css" rel="stylesheet">
+    <link href="./css/css" rel="stylesheet">
+    <style type="text/css">
+        .login,
+        .image {
+        min-height: 100vh;
+        }
+
+        .bg-image {
+        background-image: url('signin.png');
+        background-size: 800px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin-top: -180px;
+        }
+        .head {
+            font-size: 30px; 
+            font-weight: 600;
+        }
+    </style>
+<meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large"><meta class="foundation-mq-medium"><meta class="foundation-mq-small"><style></style></head>
+
+<body>
+    <div class="container">
+        <div class="row" style="margin-top: 20px">
+            
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <div class="col-md-7 d-none d-md-flex bg-image"></div>
+            <div class="col-md-5 bg-light">
+                <div class="login d-flex align-items-center py-5">
+                    <div class="container">
+                        <div class="row" style="margin-top: -100px">
+                            <div class="col-lg-10 col-xl-7 mx-auto">
+                                <h3 class="display-4">Sign In</h3>
+                                <p class="text-muted mb-4">Login to your account to get amazing deals and products.</p>
+                                <form method="POST" action="/signin">
+                                    <div class="form-group mb-3">
+                                        <input id="inputEmail" name="email" type="email" placeholder="Email address" required="" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4" >
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input id="inputPassword" type="password" placeholder="Password" required="" class="form-control rounded-pill border-0 shadow-sm px-4 text-primary" name="pwd">
+                                    </div>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input id="customCheck1" type="checkbox" checked="" class="custom-control-input">
+                                        <label for="customCheck1" class="custom-control-label">Remember password</label>
+                                    </div>
+                                    <ul class="list-login" style="list-style: none;">
+                                        <li class="switch-slide">
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                                Keep Logged in
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <a href="https://ezshopping-rushabh.herokuapp.com/forgot.php" class="text-right">Forgot password?</a>
+                                        </li>
+                                        <li class="clearfix"></li>
+                                    </ul>
+                                    <ul class="list-login" style="list-style: none;">
+                                        <li class="">
+                                            <a href="https://ezshopping-rushabh.herokuapp.com/register.php" class="">Don't have an Account?</a>
+                                        </li>
+                                        <li class="clearfix"></li>
+                                    </ul>
+                                    <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">Sign in</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <script src="./css/jquery.js.download"></script>
+    <script src="./css/foundation.min.js.download"></script>
+    <script>
+      $(document).foundation();
+    </script>
+
+
+</body></html>

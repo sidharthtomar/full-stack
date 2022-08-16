@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Products</title>
+    <link href="./clothing_files/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="./clothing_files/twk-main.js.download" charset="UTF-8" crossorigin="*"></script>
+    <script src="./clothing_files/twk-vendor.js.download" charset="UTF-8" crossorigin="*"></script>
+    <script src="./clothing_files/twk-chunk-vendors.js.download" charset="UTF-8" crossorigin="*"></script>
+    <script src="./clothing_files/twk-chunk-common.js.download" charset="UTF-8" crossorigin="*"></script>
+    <script src="./clothing_files/twk-runtime.js.download" charset="UTF-8" crossorigin="*"></script>
+    <script src="./clothing_files/twk-app.js.download" charset="UTF-8" crossorigin="*"></script>
+    <script async="" src="./clothing_files/1f2e4dimg" charset="UTF-8" crossorigin="*"></script>
+    <script src="./clothing_files/bootstrap.min.js.download"></script>
+    <script src="./clothing_files/jquery.min.js.download"></script>
+
+    <link rel="stylesheet" href="./clothing_files/font-awesome.min.css">
+    <style type="text/css">
+        .product-grid3 {
+            font-family: Roboto, sans-serif;
+            text-align: center;
+            position: relative;
+            z-index: 1
+        }
+
+        .product-grid3:before {
+            content: "";
+            height: 81%;
+            width: 100%;
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, .1);
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all .5s ease 0s
+        }
+
+        .product-grid3:hover:before {
+            opacity: 1;
+            height: 100%
+        }
+
+        .product-grid3 .product-image3 {
+            position: relative
+        }
+
+        .product-grid3 .product-image3 a {
+            display: block
+        }
+
+        .product-grid3 .product-image3 img {
+            width: 100%;
+            height: auto
+        }
+
+        .product-grid3 .pic-1 {
+            opacity: 1;
+            transition: all .5s ease-out 0s
+        }
+
+        .product-grid3 .social {
+            width: 120px;
+            padding: 0;
+            margin: 0 auto;
+            list-style: none;
+            opacity: 0;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: -23px;
+            transform: scale(0);
+            transition: all .3s ease 0s
+        }
+
+        .product-grid3:hover .social {
+            opacity: 1;
+            transform: scale(1)
+        }
+
+        .product-grid3:hover .product-discount-label,
+        .product-grid3:hover .product-new-label,
+        .product-grid3:hover .title {
+            opacity: 0
+        }
+
+        .product-grid3 .social li {
+            display: inline-block
+        }
+
+        .product-grid3 .social li a {
+            color: #e67e22;
+            background: #fff;
+            font-size: 18px;
+            line-height: 50px;
+            width: 50px;
+            height: 50px;
+            border: 1px solid rgba(0, 0, 0, .1);
+            border-radius: 50%;
+            margin: 0 2px;
+            display: block;
+            transition: all .3s ease 0s
+        }
+
+        .product-grid3 .social li a:hover {
+            background: #e67e22;
+            color: #fff
+        }
+
+        .product-grid3 .product-discount-label,
+        .product-grid3 .product-new-label {
+            background-color: #e67e22;
+            color: #fff;
+            font-size: 17px;
+            padding: 2px 10px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            transition: all .3s
+        }
+
+        .product-grid3 .product-content {
+            z-index: -1;
+            padding: 15px;
+            text-align: left
+        }
+
+        .product-grid3 .title {
+            font-size: 14px;
+            text-transform: capitalize;
+            margin: 0 0 7px;
+            transition: all .3s ease 0s
+        }
+
+        .product-grid3 .title a {
+            color: #414141
+        }
+
+        .product-grid3 .price {
+            color: #000;
+            font-size: 16px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            margin-right: 2px;
+            display: inline-block
+        }
+
+        .product-grid3 .price span {
+            color: #909090;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0;
+            text-decoration: line-through;
+            text-align: left;
+            display: inline-block;
+            margin-top: -2px
+        }
+
+        .product-grid3 .rating {
+            padding: 0;
+            margin: -22px 0 0;
+            list-style: none;
+            text-align: right;
+            display: block
+        }
+
+        .product-grid3 .rating li {
+            color: #ffd200;
+            font-size: 13px;
+            display: inline-block
+        }
+
+        .product-grid3 .rating li.disable {
+            color: #dcdcdc
+        }
+
+        @media only screen and (max-width:1200px) {
+            .product-grid3 .rating {
+                margin: 0
+            }
+        }
+
+        @media only screen and (max-width:990px) {
+            .product-grid3 {
+                margin-bottom: 30px
+            }
+
+            .product-grid3 .rating {
+                margin: -22px 0 0
+            }
+        }
+
+        @media only screen and (max-width:359px) {
+            .product-grid3 .rating {
+                margin: 0
+            }
+        }
+
+        .img {
+            height: 200px;
+        }
+    </style>
+    <script charset="utf-8" src="./clothing_files/twk-chunk-2d0d2b7c.js.download"></script>
+    <script charset="utf-8" src="./clothing_files/twk-chunk-2d224aff.js.download"></script>
+    <script charset="utf-8" src="./clothing_files/twk-chunk-f1596d96.js.download"></script>
+    <script charset="utf-8" src="./clothing_files/twk-chunk-48f46bef.js.download"></script>
+    <script charset="utf-8" src="./clothing_files/twk-chunk-4fe9d5dd.js.download"></script>
+    <script charset="utf-8" src="./clothing_files/twk-chunk-2d0b9454.js.download"></script>
+    <script charset="utf-8" src="./clothing_files/twk-chunk-f163fcd0.js.download"></script>
+    <script charset="utf-8" src="./clothing_files/twk-chunk-49eb0da8.js.download"></script>
+    <style type="text/css">
+        #kfjrpg29noug1637004271962 {
+            outline: none !important;
+            visibility: visible !important;
+            resize: none !important;
+            box-shadow: none !important;
+            overflow: visible !important;
+            background: none !important;
+            opacity: 1 !important;
+            filter: alpha(opacity=100) !important;
+            -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity 1
+            }
+
+        ) !important;
+        -mz-opacity:1 !important;
+        -khtml-opacity:1 !important;
+        top:auto !important;
+        right:0px !important;
+        bottom:0px !important;
+        left:auto !important;
+        position:fixed !important;
+        border:0 !important;
+        min-height:0px !important;
+        min-width:0px !important;
+        max-height:none !important;
+        max-width:none !important;
+        padding:0px !important;
+        margin:0px !important;
+        -moz-transition-property:none !important;
+        -webkit-transition-property:none !important;
+        -o-transition-property:none !important;
+        transition-property:none !important;
+        transform:none !important;
+        -webkit-transform:none !important;
+        -ms-transform:none !important;
+        width:auto !important;
+        height:auto !important;
+        display:none !important;
+        z-index:2000000000 !important;
+        background-color:transparent !important;
+        cursor:none !important;
+        float:none !important;
+        border-radius:unset !important;
+        pointer-events:auto !important;
+        clip:auto !important;
+        }
+    </style>
+    <script src="./clothing_files/emojione.min.js.download" type="text/javascript" async="" defer=""></script>
+    <script src="./clothing_files/emojione.min.js.download" type="text/javascript" async="" defer=""></script>
+    <style type="text/css">
+        @keyframes tawkMaxOpen {
+            0% {
+                opacity: 0;
+                transform: translate(0, 30px);
+                ;
+            }
+
+            to {
+                opacity: 1;
+                transform: translate(0, 0px);
+            }
+        }
+
+        @-moz-keyframes tawkMaxOpen {
+            0% {
+                opacity: 0;
+                transform: translate(0, 30px);
+                ;
+            }
+
+            to {
+                opacity: 1;
+                transform: translate(0, 0px);
+            }
+        }
+
+        @-webkit-keyframes tawkMaxOpen {
+            0% {
+                opacity: 0;
+                transform: translate(0, 30px);
+                ;
+            }
+
+            to {
+                opacity: 1;
+                transform: translate(0, 0px);
+            }
+        }
+
+        #z2udt4gkh1v81637004272008.open {
+            animation: tawkMaxOpen .25s ease !important;
+        }
+
+        @keyframes tawkMaxClose {
+            from {
+                opacity: 1;
+                transform: translate(0, 0px);
+                ;
+            }
+
+            to {
+                opacity: 0;
+                transform: translate(0, 30px);
+                ;
+            }
+        }
+
+        @-moz-keyframes tawkMaxClose {
+            from {
+                opacity: 1;
+                transform: translate(0, 0px);
+                ;
+            }
+
+            to {
+                opacity: 0;
+                transform: translate(0, 30px);
+                ;
+            }
+        }
+
+        @-webkit-keyframes tawkMaxClose {
+            from {
+                opacity: 1;
+                transform: translate(0, 0px);
+                ;
+            }
+
+            to {
+                opacity: 0;
+                transform: translate(0, 30px);
+                ;
+            }
+        }
+
+        #z2udt4gkh1v81637004272008.closed {
+            animation: tawkMaxClose .25s ease !important
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="margin-right: 850px;"
+                href="https://ezshopping-rushabh.herokuapp.com/kids.php#">eZ-Shopping</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item" style="margin-right: 20px;">
+                        <a class="nav-link active" aria-current="page"
+                            href="https://ezshopping-rushabh.herokuapp.com/index.php">Home</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 20px;">
+                        <a class="nav-link" href="https://ezshopping-rushabh.herokuapp.com/mens.php">Products</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 20px;">
+                        <a class="nav-link" href="https://ezshopping-rushabh.herokuapp.com/cart.php">Cart</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 20px;">
+                        <a class="nav-link" href="https://ezshopping-rushabh.herokuapp.com/login.php">Login</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 20px;">
+                        <a class="nav-link" href="https://ezshopping-rushabh.herokuapp.com/register.php">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <nav style="margin-top: 30px;">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link"
+                        href="https://ezshopping-rushabh.herokuapp.com/mens.php">Protein</a></li>
+                <li class="page-item"><a class="page-link" href="https://ezshopping-rushabh.herokuapp.com/women.php">Gym
+                        equipment</a></li>
+                <li class="page-item active" aria-current="page">
+                    <span class="page-link">
+                        Clothing
+                        <span class="sr-only">(current)</span>
+                    </span>
+                </li>
+
+
+                <li class="page-item"><a class="page-link"
+                        href="https://ezshopping-rushabh.herokuapp.com/electronics.php">Electronics</a></li>
+
+            </ul>
+        </nav>
+        <h3>Clothing</h3>
+        <div class="row">
+
+            <div class="col-md-4 col-sm-6">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="https://ezshopping-rushabh.herokuapp.com/kids.php#">
+                            <img class="pic-1"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkuuFY_US3PZkqjEzwq0YFZgr-QEVgduq7PQ&usqp=CAU"
+                                style="height: 450px;">
+
+                        </a>
+                        <ul class="social">
+                            <li><a href="https://ezshopping-rushabh.herokuapp.com/update-cart.php?action=add&amp;id=33"><i
+                                        class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="https://ezshopping-rushabh.herokuapp.com/kids.php#">Men full gym
+                                clothing</a></h3>
+                        <div class="price">
+                            ₹799.00
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="https://ezshopping-rushabh.herokuapp.com/kids.php#">
+                            <img class="pic-1" src="https://s1.thcdn.com/productimg/1600/1600/11869233-2094773605569410.jpg" style="height: 450px;">
+
+                        </a>
+                        <ul class="social">
+                            <li><a href="https://ezshopping-rushabh.herokuapp.com/update-cart.php?action=add&amp;id=34"><i
+                                        class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="https://ezshopping-rushabh.herokuapp.com/kids.php#">Men gym vest
+                                </a></h3>
+                        <div class="price">
+                            ₹2499.00
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="https://ezshopping-rushabh.herokuapp.com/kids.php#">
+                            <img class="pic-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Gu1mQK-ZEoI0m2ph92mwLwhPswC2wgN8DlLFY8HlRJkN4umX6nIEv9tPJTZW3tcUJhU&usqp=CAU" style="height: 450px;">
+
+                        </a>
+                        <ul class="social">
+                            <li><a href="https://ezshopping-rushabh.herokuapp.com/update-cart.php?action=add&amp;id=35"><i
+                                        class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="https://ezshopping-rushabh.herokuapp.com/kids.php#">Mens sposts pant
+                                </a></h3>
+                        <div class="price">
+                            ₹1999.00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="https://ezshopping-rushabh.herokuapp.com/kids.php#">
+                            <img class="pic-1"
+                                src="data:image/jpeg;base64,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"
+                                style="height: 450px;">
+
+                        </a>
+                        <ul class="social">
+                            <li><a href="https://ezshopping-rushabh.herokuapp.com/update-cart.php?action=add&amp;id=36"><i
+                                        class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="https://ezshopping-rushabh.herokuapp.com/kids.php#">Women gym outfit</a>
+                        </h3>
+                        <div class="price">
+                            ₹999.00
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="https://ezshopping-rushabh.herokuapp.com/kids.php#">
+                            <img class="pic-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTSt9gK1HJFEewNSrIJP-Ap1UtJB7Po9WeRw&usqp=CAU" style="height: 450px;">
+
+                        </a>
+                        <ul class="social">
+                            <li><a href="https://ezshopping-rushabh.herokuapp.com/update-cart.php?action=add&amp;id=37"><i
+                                        class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="https://ezshopping-rushabh.herokuapp.com/kids.php#">Gym outfit with hoodies</a></h3>
+                        <div class="price">
+                            ₹1999.00
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="product-grid3">
+                    <div class="product-image3">
+                        <a href="https://ezshopping-rushabh.herokuapp.com/kids.php#">
+                            <img class="pic-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS74i0ObLJs2o5QYHLE5moD3TvK1jGpwCLKLg&usqp=CAU"
+                                style="height: 450px;">
+
+                        </a>
+                        <ul class="social">
+                            <li><a href="https://ezshopping-rushabh.herokuapp.com/update-cart.php?action=add&amp;id=39"><i
+                                        class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="https://ezshopping-rushabh.herokuapp.com/kids.php#">Gym outfit with leggings
+                                </a></h3>
+                        <div class="price">
+                            ₹899.00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="row">
+            
+            
+            
+        </div><br><br>
+        <div class="row"> </div>
+    </div>
+
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/60698af3067c2605c0bf1a7e/1f2e4dimg';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+
+    <script async="" charset="UTF-8" src="./clothing_files/en.js.download"></script>
+    <div id="kfjrpg29noug1637004271962" style="display: block !important;"><iframe
+            src="./clothing_files/saved_resource.html" frameborder="0" scrolling="no" width="64px" height="60px"
+            style="outline:none !important; visibility:visible !important; resize:none !important; box-shadow:none !important; overflow:visible !important; background:none !important; opacity:1 !important; filter:alpha(opacity=100) !important; -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity 1}) !important; -mz-opacity:1 !important; -khtml-opacity:1 !important; top:auto !important; right:16px !important; bottom:20px !important; left:auto !important; position:fixed !important; border:0 !important; min-height:60px !important; min-width:64px !important; max-height:60px !important; max-width:64px !important; padding:0 !important; margin:0 !important; -moz-transition-property:none !important; -webkit-transition-property:none !important; -o-transition-property:none !important; transition-property:none !important; transform:none !important; -webkit-transform:none !important; -ms-transform:none !important; width:64px !important; height:60px !important; display:block !important; z-index:1000001 !important; background-color:transparent !important; cursor:none !important; float:none !important; border-radius:unset !important; pointer-events:auto !important; clip:auto !important;"
+            id="xjjllg4p1abg1637004271971" class="" title="chat widget"></iframe><iframe
+            src="./clothing_files/saved_resource(1).html" frameborder="0" scrolling="no" width="350px" height="411px"
+            style="outline:none !important; visibility:visible !important; resize:none !important; box-shadow:none !important; overflow:visible !important; background:none !important; opacity:1 !important; filter:alpha(opacity=100) !important; -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity 1}) !important; -mz-opacity:1 !important; -khtml-opacity:1 !important; top:auto !important; right:10px !important; bottom:90px !important; left:auto !important; position:fixed !important; border:0 !important; min-height:411px !important; min-width:350px !important; max-height:411px !important; max-width:350px !important; padding:0 !important; margin:0 !important; -moz-transition-property:none !important; -webkit-transition-property:none !important; -o-transition-property:none !important; transition-property:none !important; transform:none !important; -webkit-transform:none !important; -ms-transform:none !important; width:350px !important; height:411px !important; display:none !important; z-index:auto !important; background-color:transparent !important; cursor:none !important; float:none !important; border-radius:5px !important; pointer-events:auto !important; clip:auto !important;"
+            id="z2udt4gkh1v81637004272008" class="" title="chat widget"></iframe><iframe
+            src="./clothing_files/saved_resource(2).html" frameborder="0" scrolling="no" width="360px" height="411px"
+            style="outline:none !important; visibility:visible !important; resize:none !important; box-shadow:none !important; overflow:visible !important; background:none !important; opacity:1 !important; filter:alpha(opacity=100) !important; -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity 1}) !important; -mz-opacity:1 !important; -khtml-opacity:1 !important; top:auto !important; right:20px !important; bottom:100px; left:auto !important; position:fixed !important; border:0 !important; min-height:411px !important; min-width:360px !important; max-height:411px !important; max-width:360px !important; padding:0 !important; margin:0 !important; -moz-transition-property:none !important; -webkit-transition-property:none !important; -o-transition-property:none !important; transition-property:none !important; transform:none !important; -webkit-transform:none !important; -ms-transform:none !important; width:360px !important; height:411px !important; display:none !important; z-index:auto !important; background-color:transparent !important; cursor:none !important; float:none !important; border-radius:unset !important; pointer-events:auto !important; clip:auto !important;"
+            id="ep4e8ph72rgg1637004271983" class="" title="chat widget"></iframe><iframe
+            src="./clothing_files/saved_resource(3).html" frameborder="0" scrolling="no" width="124px" height="95px"
+            style="outline:none !important; visibility:visible !important; resize:none !important; box-shadow:none !important; overflow:visible !important; background:none !important; opacity:1 !important; filter:alpha(opacity=100) !important; -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity 1}) !important; -mz-opacity:1 !important; -khtml-opacity:1 !important; top:auto !important; right:0px !important; bottom:30px !important; left:auto !important; position:fixed !important; border:0 !important; min-height:95px !important; min-width:124px !important; max-height:95px !important; max-width:124px !important; padding:0 !important; margin:0px 0 0 0 !important; -moz-transition-property:none !important; -webkit-transition-property:none !important; -o-transition-property:none !important; transition-property:none !important; transform:rotate(0deg) translateZ(0); -webkit-transform:rotate(0deg) translateZ(0); -ms-transform:rotate(0deg) translateZ(0); width:124px !important; height:95px !important; display:none !important; z-index:1000002 !important; background-color:transparent !important; cursor:none !important; float:none !important; border-radius:unset !important; pointer-events:auto !important; clip:auto !important; -moz-transform:rotate(0deg) translateZ(0); -o-transform:rotate(0deg) translateZ(0); transform-origin:0; -moz-transform-origin:0; -webkit-transform-origin:0; -o-transform-origin:0; -ms-transform-origin:0;"
+            id="sg3av6k1nc481637004271978" class="" title="chat widget"></iframe></div>
+</body>
+
+</html>

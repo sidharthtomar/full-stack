@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zxx"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Register</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <link rel="stylesheet" href="./css/register.css" type="text/css" media="all">
+
+    <link href="./css/font-awesome.css" rel="stylesheet">
+
+    <link href="./css/css" rel="stylesheet">
+    <style type="text/css">
+        .border-md {
+            border-width: 2px;
+        }
+
+
+        body {
+            min-height: 100vh;
+        }
+
+        .form-control:not(select) {
+            padding: 10px;
+        }
+
+        select.form-control {
+            height: 52px;
+            padding-left: 0.5rem;
+        }
+
+        .form-control::placeholder {
+            color: #ccc;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        .form-control:focus {
+            box-shadow: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar-->
+<header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
+        <div class="container">
+        </div>
+    </nav>
+</header>
+
+
+<div class="container">
+
+    <div class="row py-5 mt-4 align-items-center">
+        <!-- For Demo Purpose -->
+        <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
+            <img src="https://rknetworkmarketing.com/images/login.jpg" alt="" class="img-fluid mb-3 d-none d-md-block">
+            <h1>Create an Account</h1>
+            <p class="font-italic text-muted mb-0">Register on our site and use CODE - FIRSTBUY to get extra 33% off on your first order.</p>
+            <p class="font-italic text-muted">eZShopping - <a href="https://ezshopping-rushabh.herokuapp.com/register.php" class="text-muted">
+                <u>Terms and Conditions</u></a>
+            </p>
+        </div>
+
+        <!-- Registeration Form -->
+        <div class="col-md-7 col-lg-6 ml-auto">
+            <form method="POST" action="/signup">
+                <div class="row">
+                    <div class="input-group col-lg-12 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                <i class="fa fa-user text-muted"></i>
+                            </span>
+                        </div>
+                        <input type="text" name="fname" placeholder="First Name" class="form-control bg-white border-left-0 border-md">
+                    </div>
+                    <div class="input-group col-lg-12 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                <i class="fa fa-user text-muted"></i>
+                            </span>
+                        </div>
+                        <input type="text" name="lname" placeholder="Last Name" class="form-control bg-white border-left-0 border-md">
+                    </div>
+                    <div class="input-group col-lg-12 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                <i class="fa fa-home text-muted"></i>
+                            </span>
+                        </div>
+                        <input type="text" name="address" placeholder="Address" class="form-control bg-white border-left-0 border-md">
+                    </div>
+                    <div class="input-group col-lg-12 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                <i class="fa fa-map-marker text-muted"></i>
+                            </span>
+                        </div>
+                        <input type="text" name="city" placeholder="City" class="form-control bg-white border-left-0 border-md">
+                    </div>
+
+                    <div class="input-group col-lg-12 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                <i class="fa fa-map-pin text-muted"></i>
+                            </span>
+                        </div>
+                        <input type="number" name="pin" placeholder="Pincode" class="form-control bg-white border-left-0 border-md">
+                    </div>
+
+                    <!-- Email Address -->
+                    <div class="input-group col-lg-12 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                <i class="fa fa-envelope text-muted"></i>
+                            </span>
+                        </div>
+                        <input type="email" name="email" placeholder="Email Address" class="form-control bg-white border-left-0 border-md">
+                    </div>
+                    <div class="input-group col-lg-12 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                <i class="fa fa-lock text-muted"></i>
+                            </span>
+                        </div>
+                        <input type="password" name="pwd" placeholder="Password" class="form-control bg-white border-md border-left-0 pl-3">
+                    </div>
+                    <div class="input-group col-lg-12 mb-4">
+                        <p>By clicking on create account, you agree to the terms and conditions and the privacy policy of this website.
+                        </p>
+                    </div>
+                    <div class="form-group col-lg-12 mx-auto mb-0">
+                    
+                        <button type="submit" class="btn btn-primary btn-block py-2">
+                            <span class="font-weight-bold" style="font-size: larger;">Create your account</span>
+                        </button>
+                    </div>
+                    <div class="text-center w-100">
+                        <p class="text-muted font-weight-bold">Already Registered? <a href="https://ezshopping-rushabh.herokuapp.com/login.php" class="text-primary ml-2">Login</a></p>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+</body></html>
